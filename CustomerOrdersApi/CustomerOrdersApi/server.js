@@ -5,7 +5,7 @@
 
 var app = express();
 
-app.set('view engines', 'vash');
+app.set('view engine', 'vash');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
