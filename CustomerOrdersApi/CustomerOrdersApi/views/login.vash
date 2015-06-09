@@ -1,0 +1,17 @@
+﻿@html.extend("layout", function(model)
+{
+    @html.block("body", function(model)
+    {
+        <h1>@model.data.title</h1>
+    
+        @if (model.data.error !== '') {
+            <div class="error">@model.data.error</div>
+        }
+
+        <form method="post" action="/login">
+            Username: <input type="text" name="username" value="@model.data.username" /> <br />
+            Password: <input type="password" name="password" /> <br />
+            <input type="submit" name="submit" value="Login" />
+        </form>
+    })
+})

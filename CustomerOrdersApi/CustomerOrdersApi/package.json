@@ -1,0 +1,18 @@
+{
+  "name": "CustomerOrdersApi",
+  "version": "0.0.0",
+  "description": "CustomerOrdersApi",
+  "main": "server.js",
+  "author": {
+    "name": "lisamarie",
+    "email": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4",
+    "grunt": "^0.4.5",
+    "mongodb": "^2.0.33",
+    "nodemon": "^1.3.7",
+    "vash": "^0.8.7"
+  }
+}

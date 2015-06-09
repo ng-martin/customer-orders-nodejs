@@ -1,0 +1,19 @@
+﻿@html.extend("layout", function(model)
+{
+    @html.block("body", function(model)
+    {
+        <h1>Welcome to your portal</h1>
+        
+        <h3>Your details:</h3>
+
+        <div>
+            <ul>
+                <li>UserID: @model.data.id</li>
+                <li>Username: @model.data.username</li>
+                <li>Firstname: @model.data.firstname</li>
+                <li>Lastname: @model.data.lastname</li>
+                <li>Token: @model.data.token</li>
+            </ul>
+        </div>
+    })
+})
